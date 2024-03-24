@@ -1,0 +1,65 @@
+.board{
+    .icon{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .board-card{
+        min-height: 500px;
+        padding: 12px;
+    }
+    .inner-card{
+        padding: 10px;
+        h4{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: $primary-color;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .priority{
+            span{
+                color: green;
+            }
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .new-board{
+        .icon{
+            background: lightgreen;
+        }
+    }
+    .in-work-board{
+        .icon{
+            background: orange;
+        }
+    }
+    .in-review-board{
+        .icon{
+            background: yellow;
+        }
+    }
+    .done-board{
+        .icon{
+            background: green;
+        }
+    }
+}

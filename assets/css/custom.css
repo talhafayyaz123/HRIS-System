@@ -1,0 +1,254 @@
+/* .left-side-menu .logo-box{
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.left-side-menu .logo-box a{
+  display: flex !important;
+  align-items: center;
+}
+.left-side-menu .logo-box a img{
+  width: 100%;
+}
+
+.left-side-menu .logo-box a .logo-img{
+  width: 20%;
+}
+body[data-sidebar-size=condensed] .logo .logo-img{
+  width: 100%;
+}
+.left-side-menu .logo-box a .logo-text{
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0px;
+    letter-spacing: 2px;
+} */
+table tr td{
+  padding: 0.4em 0.7em 0.4em 0.7em !important;
+}
+table thead th{
+  white-space: nowrap;
+}
+.good-table-cus thead tr th:last-child{
+  text-align: center;
+}
+.good-table-cus tbody tr td:last-child{
+    text-align: center;
+}
+table.vgt-table {
+  font-size: 14.4px !important;
+  border: 1px solid #ffffff !important;
+}
+.vgt-wrap__footer .footer__row-count__label {
+  font-size: 14.4px !important;
+  margin-top: 5px !important;
+}
+.vgt-wrap__footer .footer__row-count__select {
+  font-size: 14.4px !important;
+}
+.vgt-wrap__footer .footer__navigation {
+  font-size: 14.4px !important;
+}
+.vgt-wrap__footer .footer__navigation__page-btn span {
+  font-size: 14.4px !important;
+}
+.page-info__label {
+  margin-bottom: 0rem !important;
+}
+.vgt-table thead th {
+  background: #ffffff !important;
+  border-bottom: 2px solid #dcdfe6 !important;
+}
+
+.vgt-wrap__footer {
+  padding: 0.5em !important;
+}
+
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  
+}
+#loading::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+}
+
+.loader-portlet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #5559;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 65px;
+  right: 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 125px;
+  right: 40px;
+  z-index: 9;
+  width: auto;
+}
+.notify-icon {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 45px !important;
+  width: 45px !important;
+  font-size: 22px !important;
+  line-height: 40px !important;
+  background-color: #3b4550;
+  color: white;
+}
+.tick-icon {
+  opacity: 0.7;
+}
+/* Add styles to the form container */
+.form-container {
+  width: 420px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.border-top-radius {
+  background-color: #38414a;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.border-bottom-radius {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+.noti-icon-dev {
+  position: relative;
+  font-size: 27px;
+}
+
+.noti-icon-dev .badge-dev {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 15px;
+  height: 16px;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1;
+}
+
+.custom-pointer {
+  cursor: pointer;
+}
+
+.edit-icon{
+      color: #98a6ad;
+       font-size: 1.1rem;
+}
+
+.edit-icon:hover {
+  color: #3f3f3f;
+}
+.customer_tab .wizard-nav{
+  align-items: flex-start;
+}
+.customer_tab .wizard-nav li a{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  color: #999;
+}
+.customer_tab .wizard-nav li a .stepTitle{
+  position: absolute;
+  z-index: 1;
+}
+.customer_tab .wizard-nav li a .stepTitle.active{
+  color: #fff !important;
+}
+.customer_tab .wizard-nav li a .wizard-icon{
+  display: none !important;
+}
+.customer_tab .wizard-progress-with-circle{
+  display: none;
+}
+.trash-parameter i{
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.delete_bank_details{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: #e6e8ee;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.md-editor-divider{
+  display: none !important;
+}

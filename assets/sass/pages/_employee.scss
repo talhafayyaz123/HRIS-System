@@ -1,0 +1,54 @@
+.employee-profile{
+    h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: flex;
+            align-items:center;
+            margin-bottom: 8px;
+            .icon{
+                width: 40px;
+            }
+            p{
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+.employe-img{
+    width: 180px;
+        height: 180px;
+        position: relative;
+        margin: auto;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .add-img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        button{
+            
+            background: $primary-color;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+    }
+}

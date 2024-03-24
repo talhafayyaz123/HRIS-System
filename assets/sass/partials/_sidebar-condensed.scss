@@ -1,0 +1,314 @@
+.sidebar-condensed {
+    .left-side-menu {
+        width: 70px;
+        padding: 20px 0;
+        transition: all .2s ease-out;
+
+        .logo-box {
+            padding: 0 20px;
+            height: auto;
+
+            .logo-sm {
+                display: block;
+                animation: fadeIn 0.5s ease-in-out;
+            }
+
+            .logo-lg {
+                display: none;
+            }
+        }
+
+        .upper_nav {
+            padding: 0 15px;
+            margin-top: 20px;
+
+            ul {
+                li {
+                    a {
+                        justify-content: center;
+
+                        svg {
+                            margin: 0;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        #sidebar-menu {
+            padding: 0 15px;
+
+            ul {
+                li.menu-item {
+                    a.menu-link {
+                        justify-content: center;
+                        .menu-icon {
+                            width: auto;
+                            display: block;
+
+                            svg {
+                                margin-right: 0;
+                            }
+                        }
+
+                        span {
+                            display: none;
+                        }
+
+                        .menu-arrow {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_nav {
+
+            left: 15px;
+        }
+
+    }
+
+    .left-side-menu #sidebar-menu ul li a svg {
+        margin: 0;
+    }
+
+    .navbar-custom {
+        left: 95px;
+    }
+
+    .content-page {
+        margin-left: 70px;
+        min-height: 80vh;
+        overflow: hidden;
+        padding: 80px 15px 65px 25px;
+        transition: all .2s ease-out;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    to {
+        opacity: 1;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (max-width:1000px) {
+    .sidebar-condensed {
+        .left-side-menu {
+            left: 0px;
+            width: 260px;
+            visibility: visible;
+            opacity: 1;
+            z-index: 9999;
+
+            .logo-box {
+                padding: 0 20px;
+                height: auto;
+
+                .logo-sm {
+                    display: none;
+                    animation: fadeIn 0.5s ease-in-out;
+                }
+
+                .logo-lg {
+                    display: block;
+                }
+            }
+
+            .upper_nav {
+                padding: 0 20px;
+                margin-top: 20px;
+
+                ul {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    border-bottom: 1px solid #D0D6DE;
+                    padding-bottom: 10px;
+
+                    li {
+                        width: 100%;
+                        margin-bottom: 6px;
+
+                        &:first-child {
+                            a {
+                                i {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        a {
+                            background: rgba(255, 255, 255, 0.15);
+                            color: rgb(255, 255, 255);
+                            font-weight: 400;
+                            font-size: 14px;
+                            padding: 10px 10px;
+                            border-radius: 6px;
+                            text-transform: capitalize;
+                            display: flex;
+                            align-items: center;
+
+                            position: relative;
+                            height: 40px;
+
+                            i {
+                                width: 25px;
+                                display: inline-block;
+                            }
+
+                            .tasks {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 6px;
+                                background: rgba(0, 0, 0, 0.20);
+                                position: absolute;
+                                right: 8px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            span {
+                                display: block;
+                            }
+
+                            &:hover {
+                                background: rgba(255, 255, 255, 1);
+                                color: rgba(56, 65, 74, 1);
+                                border-radius: 6px;
+
+                                i {
+                                    color: #F59630;
+                                }
+
+                                .tasks {
+                                    color: #fff;
+                                    background: #F59630;
+                                }
+                            }
+                        }
+
+                        a.nuxt-link-active {
+                            background: rgba(255, 255, 255, 1);
+                            color: rgba(56, 65, 74, 1);
+
+                            i {
+                                color: #F59630;
+                            }
+
+                            .tasks {
+                                color: #fff;
+                                background: #F59630;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .middle-nav {
+                padding-top: 10px;
+            }
+
+            #sidebar-menu {
+                padding: 0 20px;
+
+                ul {
+                    li.menuitem-active {
+                        a {
+                            background: rgba(255, 255, 255, 1);
+                            color: rgba(56, 65, 74, 1);
+                            border-radius: 6px;
+
+                            i {
+                                color: #F59630;
+                            }
+                        }
+                    }
+
+                    li {
+                        margin-bottom: 6px;
+
+                        a {
+                            color: rgba(255, 255, 255, 1);
+                            font-weight: 400;
+                            font-size: 14px;
+                            padding: 10px 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            height: 40px;
+
+                            i {
+                                width: 25px;
+                                display: inline-block;
+                            }
+
+                            span {
+                                display: block;
+                            }
+
+                            &:hover {
+                                background: rgba(255, 255, 255, 1);
+                                color: rgba(56, 65, 74, 1);
+                                border-radius: 6px;
+
+                                i {
+                                    color: #F59630;
+                                }
+                            }
+                        }
+
+                        ul {
+                            margin: 0px;
+                            padding: 0px;
+
+                            li {
+                                a {
+                                    padding: 8px 10px 8px 45px;
+                                }
+                            }
+
+                            li.menuitem-active {
+                                a {
+                                    background: rgba(255, 255, 255, 1);
+                                    color: rgba(56, 65, 74, 1);
+                                    border-radius: 6px;
+
+                                    i {
+                                        color: #F59630;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-custom {
+            left: 0px;
+        }
+
+        .content-page {
+            margin-left: 0px;
+            padding: 80px 15px 65px 15px;
+        }
+
+    }
+}
